@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--<link rel="stylesheet" href="resources/css/index.css" type="text/css">-->
+	<link rel="stylesheet" href="/SnackLanguage/resources/css/index.css" type="text/css" rel="stylesheet">
+	<title>Snack Language</title>
+</head>
+<body>
+    	<div class="wall">
+		<div id="header">
+			<a href=""><h1>Snack Language</h1></a>
+			<a id="sign_in" href="#sign_in_panel"><h3>Войти</h3></a>
+			<a href=""><h3>about us</h3></a>
+			<a href=""><h3>Languages</h3></a>
+		</div>
+	<script>
+		/*sign_in.onclick = signIn;*/
+		function signIn(){
+			prompt("name", name);
+		}
+	</script>
+		<div id="sign_in_panel">
+			<div>
+				<a href="#close" title="Закрыть" id="close">X</a>
+				<a id="title_sign_in">Авторизация</a>
+				<input id="name_autorization" type="text" placeholder=" Login"/>
+				<input id="password_autorization" type="password" placeholder=" Password"/>
+				<input id="button_autorization" type="submit" value="Войти"/>
+			</div>
+		</div>
+		<div id="login_parametr">
+			<div id="registrationFields">
+				<form id="form_login">
+				<a id="text_registration" style="color:white"><h2>Регистрация</h2></a>
+				<input id="name_input" type="text" placeholder=" Имя"/>
+				<input id="second_name_input" type="text" placeholder=" Фамилия" />
+				<input id="email_input" type="text" placeholder=" Email"/>
+				<input id="password_input" type="password" placeholder=" Новый пароль"/>
+				<div id="select_year">
+					<a style="color:white"><h4>Укажите дату рождения</h4></a>
+					<select id="year"></select>
+					<select id="day"></select>
+					<select id="month"></select>
+					<script>
+						var year = document.getElementById('year');
+						var day = document.getElementById('day');
+						var month = document.getElementById('month');
+						var arr_monthes = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+									"Июль", "Август", "Сентябрь", "Октябрь", "Ноябырь", "Декабырь"];
+						var z = 1;
+						var c = 1;
+						var m = 1;
+						year.options[0] = new Option("Выберите год");
+						day.options[0] = new Option("Выберите день");
+						month.options[0] = new Option("Выберите месяц");
+						for(var i = 2018; i > 1965; i--){
+							year.options[z] = new Option(i);
+							z++;
+						}
+						for(var x = 1; x < 32; x++){
+							day.options[c] = new Option(x);
+							c++;
+						}
+						for(var b = 1; b < arr_monthes.length; b++){
+							month.options[m] = new Option(arr_monthes[b]);
+							m++;
+						}
+					</script>
+				</div>
+				<div id="terms_of_use">
+					<a style="color:white"></h4>Нажимая «Создать аккаунт», вы соглашаетесь с нашими Условиями использования и подтверждаете, что ознакомились 							с нашей Политикой использования данных, включая применение файлов «cookie».</h4></a>
+				</div>
+				<input id="buton_create_account" type="submit" value="Создать аккаунт"/>
+			</form>
+		</div>
+		<script>
+			function check(){
+				var name = document.getElementById('name').value;
+				var password = document.getElementById('password').value;
+				alert("Hellow " + name);
+			}
+		</script>
+		</div>
+	</div>
+</body>
+</html>

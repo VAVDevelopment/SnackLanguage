@@ -1,0 +1,211 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+#header{
+	position:fixed;
+    width:100%;
+    height:10%;
+    background:rgba(0, 0, 0, 0.7);
+	border:1px solid black;
+	/*background:linear-gradient(to top, #4466A7, #3365C7);*/
+	/*background:linear-gradient(to top, #2E78B8, #3FCFBA);*/
+}
+/* Фраза "Start Page" */
+#header a h1{
+	float:left;
+	width: 20%;
+	height:2%;
+	margin-top:1.2%;
+	margin-left:15%;
+    	color:white;
+}
+#header a{
+    margin-right:7%;
+    margin-top:1.5%;
+}
+#header a h3{
+    float:right;
+    margin-top:2%;
+    margin-right:2%;
+    color:white;
+}
+/* Это стена на экране под хедером в черной рамке*/
+.wall{
+/*	margin-top:2px;*/
+	width:100%;
+	height:100%;
+	margin-top:%;
+/*	background:linear-gradient(to top, #D6E0F5, white);*/
+/*	background:linear-gradient(to top, #A04BE2, white);*/
+/*	background:linear-gradient(to top, #74ADC8, white);*/
+	background-image:url(../images/7.jpg);
+/*	background:linear-gradient(to top, #6E9ABF, white);*/
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+/* Это белое место под поля для регистрации */
+#login_parametr{
+	position:absolute;
+	margin-top:150px;
+}
+#registrationFields{
+	/*position:relative;*/
+	height:400px;
+	width:500px;
+	margin-left:100px;
+	border:1px solid black;
+	border-radius:13px;
+/*	background:#0CBB52;*/
+	background:rgba(0, 0, 0, 0.7);
+	box-shadow:-3px -3px 20px #000000;
+}
+#form_login{
+	margin-top:10%;
+	margin-left:9%;
+}
+#form_login a h2{
+	margin-top:-6%;
+	margin-left:115px;
+	font-size:30px;
+}
+#name_input{
+	margin-top:15px;
+	width:200px;
+	height:40px;
+	background:#F4E7FD;
+	font-size:18px;
+}
+#second_name_input{
+	width:200;
+	height:40px;
+	margin-top:-40px;
+	margin-left:210px;
+	background:#F4E7FD;
+	font-size:18px;
+	
+}
+#email_input{
+	width:410px;
+	height:40px;
+	margin-top:10px;
+	background:#F4E7FD;
+	font-size:18px;
+}
+#password_input{
+	width:410px;
+	height:40px;
+	margin-top:10px;
+	background:#F4E7FD;
+	font-size:18px;
+}
+#select_year select{
+	height:30px;
+	margin-left:12px;
+	margin-top:7px;
+/*	background: transparent;*/
+	background:#F4E7FD;
+}
+#select_year{
+	margin-top:15px;
+}	
+#terms_of_use{
+	margin-top:15px;
+	font-size:10px;
+	text-align:left;
+}
+#buton_create_account{
+	margin-top:30px;
+	margin-left:120px;
+	width:150px;
+	height:35px;
+	border-radius:10px;
+	/*background:linear-gradient(to top, #32A948, #3AB651);*/
+	background:linear-gradient(to top, #F8B02A, #F8C059);
+	border: 1.3px solid #B4226B;
+	color:black;
+}
+#wallAbout a h2{
+	margin-left:5%;
+	margin-top:5%;
+}
+#sign_in_panel{
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 1000;
+	display:none;
+	pointer-events:none;
+}
+#sign_in_panel:target{
+	display:block;
+	pointer-events: auto;
+}
+#sign_in_panel > div{
+	width: 400px;
+	height:240px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+/*	background: -moz-linear-gradient(#fff, #999);*/
+	background: -webkit-linear-gradient(#fff, #999);
+/*	background: -o-linear-gradient(#fff, #999);*/
+}
+#title_sign_in{
+	margin-top:150px;
+	margin-left:125px;
+	font-size:27px;
+}
+#name_autorization{
+	margin-top:30px;
+	margin-left:65px;
+	height:35px;
+	width:280px;
+/*	background:#F4E7FD;*/
+	font-size:18px;
+	border-radius:5px;
+}
+#password_autorization{
+	margin-top:20px;
+	margin-left:65px;
+	height:35px;
+	width:280px;
+	border-radius:5px;
+	font-size:18px;
+}
+#button_autorization{
+	margin-top:30px;
+	margin-left:110px;
+	width:180px;
+	height:30px;
+	border-radius:7px;
+	border:1px solid #B4226B;
+	background:linear-gradient(to top, #F8B02A, #F8C059);
+}
+#close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+#close:hover { background: #00d9ff; }

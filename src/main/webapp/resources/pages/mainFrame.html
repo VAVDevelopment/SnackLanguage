@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/SnackLanguage/resources/css/mainFrame.css" type="text/css">
+	<title>Snack Language</title>
+	<!-- Скрипт для загрузки фото пользователя -->
+	<script>
+		function changePhoto(){
+			var new_photo = document.getElementById("file_1");
+			alert(new_photo);
+			/*var old_photo = document.getElementById("photo_place").appendChild(new_photo);*/
+		}		
+	</script>
+	<!--------------------------------------------->
+</head>
+<body>
+	<div id="main_frame">
+		<div id="header">
+			<a style="float:left; color:white; margin-left:10%; margin-top:1%; text-decoration:none;" href=""><h3>Snack Language</h3></a>
+			<a style="float:right; color:white; margin-right:10%; margin-top:1%; text-decoration:none;" href=""><h3>User Name</h3></a>
+		</div>
+		<div id="main_wall">
+			<div id="photo">
+				<img id="photo_place" src="/SnackLanguage/resources/images/empty_photo.jpg" style="width:300px"></img>
+				<a id="change_photo" href="#downloadPhoto" style="text-decoration:none;" onclick="changePhoto()"><h3>Сменить фото</h3></a>
+				<div id="downloadPhoto">
+					<div>
+						<a href="" id="close" title="Закрыть" class="close"><h3>X</h3></a>
+						<h2>Выберите изображение</h2>
+						<div id="photo_decoration">
+							
+						</div>
+						<div id="choice_file">
+							<input id="file_1" type="file" name="photo" multiple accept="image/*, image/jpeg">
+							<input type="submit" value="Отправить" onclick="changePhoto()">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="personal_information">
+				<a><h2>Personal Information</h2></a>
+				<a><h3>Name & Second Name</h3></a>
+				<hr align="center" width="100%" size="2" color="#D0D0D8" />
+				<div id="all_information">
+					<div id="attribute_information">
+						<a id="name_second_name"><h4></h4></a>
+						<a id="birthday"><h4>Дата рождения: </h4></a>
+						<a id="learning_languages"><h4>Языки на изучении: </h4></a>
+						<a id="known_languages"><h4>Изученые языки: </h4></a>
+					</div>
+					<div id="information">
+						<a id="birthday_inf"><h4>122343253</h4></a>
+						<a id="learning_languages_inf"><h4>Английский, Польский</h4></a>
+						<a id="known_languages"><h4>afsdfsgfsfdg</h4></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="">Профиль</a></li>
+				<li><a href="">Настройки</a>
+				<li><a href="">Сообщения</a></li>
+					<ul>
+						<li><a href="">Настройка профиля</a></li>
+						<li><a href="">Смена пароля</a></li>
+					</ul>
+				</li>
+				<li><a href="">Помощь</a></li>
+				<li><a href="">Выйти</a></li>
+			</ul>		
+		</div>
+		<div id="function_with_profile">
+			<a href=""><h3>Начать тест</h3></a>
+			<a href=""><h3>Выбрать язык</h3></a>
+			<a href=""><h3>Успеваемость</h3></a>
+			<a href=""><h3>Личная статистика</h3></a>
+			<a href=""><h3>Статистка друзей</h3></a>
+		</div>
+		<a id="createName"><p>Created by Postoian Vladislav Snack Language © 2018</p></a>
+	</div>
+</body>
+</html>
